@@ -28,12 +28,15 @@ This program uses third-party auth with Google. Some of the technologies used to
 * Have Vagrant and Virtual Box installed on your machine.
 * Unzip the file and put the contents in the vagrant directory.
 * Launch the Vagrant box (VM).
+
 	`$ vagrant up`
 	
 	`$ vagrant ssh`
 * To Initialize Database and To initialize the SQLite database 
+
 	`$ python Dbcreation.py`
 * To load the initial sporting categories
+
 	`$ python Items.py`
 	
 	Now categories and some items belong to that category are added.
