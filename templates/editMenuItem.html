@@ -42,13 +42,13 @@
 	<h1 align="center">Edit Item {{item.name }}</h1>
 	<form action="{{ url_for('editMenuItem', product_id = product.id, menu_id = menu_id) }}" method="POST">
 		<p>Name:</p>
-		<input type ='text' size='30' name='name' placeholder = '{{item.name }}'>
+		<input type ='text' size='30' name='name' placeholder = '{{item.name }}' required="required">
 		<p>Description:</p>
-		<input type ='text' size='30' name='description' placeholder = '{{item.description }}'>
+		<input type ='text' size='30' name='description' placeholder = '{{item.description }}' required="required">
 		<p>Price:</p>
-		<input type ='text' size='30' name='price' placeholder = '{{item.price }}'>
+		<input type ='text' size='30' name='price' placeholder = '{{item.price }}' required="required">
 		<p>Course:</p>
-		<input type ='text' size='30' name='course' placeholder = '{{item.description }}'>
+		<input type ='text' size='30' name='course' placeholder = '{{item.description }}' required="required">
 		<button type="submit" value="Edit">Edit</button>
 		<button><a href="{{ url_for('showMenu', product_id = product.id) }}">Cancel</a></button>
 	</form>
